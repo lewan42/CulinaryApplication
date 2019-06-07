@@ -29,6 +29,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+
     protected TextView tv_create_acc;
     protected EditText field_login;
     protected EditText field_password;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv_create_acc = (TextView) findViewById(R.id.create_acc);
+        tv_create_acc = findViewById(R.id.create_acc);
         field_login = findViewById(R.id.field_login);
         field_password = findViewById(R.id.field_password);
 
@@ -57,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         log_in = (Button) findViewById(R.id.btn_logIn);

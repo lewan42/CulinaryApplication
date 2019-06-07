@@ -1,12 +1,9 @@
 package com.example.lewan.myapplication.menu;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -15,31 +12,23 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.SearchView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.lewan.myapplication.MainActivity;
-import com.example.lewan.myapplication.descriptionRecipe.DescriptionRecipeActivity;
 import com.example.lewan.myapplication.R;
+import com.example.lewan.myapplication.State;
+import com.example.lewan.myapplication.descriptionRecipe.DescriptionRecipeActivity;
 import com.example.lewan.myapplication.selectionRecipes.RecipesInfo;
 import com.example.lewan.myapplication.selectionRecipes.SelectionRecipesActivity;
 
@@ -48,7 +37,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -60,11 +48,8 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.lewan.myapplication.State;
-
 import static android.app.Activity.RESULT_OK;
 import static android.content.Context.MODE_PRIVATE;
-import static com.yandex.runtime.Runtime.getApplicationContext;
 
 public class PageFragmentsMenu extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
@@ -565,9 +550,9 @@ public class PageFragmentsMenu extends Fragment {
 
                 } catch (MalformedURLException e) {
                     System.err.println(e.getMessage());
-                }catch (IOException e) {
+                } catch (IOException e) {
                     System.err.println(e.getMessage());
-                }catch (JSONException e) {
+                } catch (JSONException e) {
                     System.err.println(e.getMessage());
                 }
 
@@ -686,15 +671,13 @@ public class PageFragmentsMenu extends Fragment {
 
                 } catch (MalformedURLException e) {
                     System.err.println(e.getMessage());
-                }catch (IOException e) {
+                } catch (IOException e) {
                     System.err.println(e.getMessage());
-                }catch (JSONException e) {
+                } catch (JSONException e) {
                     System.err.println(e.getMessage());
-                }
-                catch (NoSuchFieldException e) {
+                } catch (NoSuchFieldException e) {
                     System.err.println(e.getMessage());
-                }
-                catch (IllegalAccessException e) {
+                } catch (IllegalAccessException e) {
                     System.err.println(e.getMessage());
                 }
             }

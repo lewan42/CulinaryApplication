@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.example.lewan.myapplication.R;
 import com.example.lewan.myapplication.menu.PageFragmentMenuGetUserRecipe;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -90,7 +89,7 @@ public class RecipesAdapter extends ArrayAdapter<RecipesInfo> implements Filtera
 
                         PageFragmentMenuGetUserRecipe.recipesInfo.add(new RecipesInfo(element.getIdRecipe(), element.getNameRecipe(), element.getTimeRecipe(), element.getServingsRecipe(), element.getDescriptionRecipe(), element.getImgRecipe(), true));
                         final SQLiteDatabase db = getContext().openOrCreateDatabase("app.db", MODE_PRIVATE, null);
-                        db.execSQL("INSERT INTO ids VALUES ("+element.getIdRecipe()+");");
+                        db.execSQL("INSERT INTO ids VALUES (" + element.getIdRecipe() + ");");
                         db.close();
                     }
                 }

@@ -1,26 +1,19 @@
 package com.example.lewan.myapplication;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.graphics.PointF;
 import android.location.Location;
 import android.location.LocationManager;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-//
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationRequest;
-import com.yandex.mapkit.Animation;
+
 import com.yandex.mapkit.GeoObjectCollection;
 import com.yandex.mapkit.MapKitFactory;
 import com.yandex.mapkit.directions.DirectionsFactory;
@@ -35,12 +28,10 @@ import com.yandex.mapkit.geometry.Point;
 import com.yandex.mapkit.layers.ObjectEvent;
 import com.yandex.mapkit.map.CameraListener;
 import com.yandex.mapkit.map.CameraPosition;
-
 import com.yandex.mapkit.map.CameraUpdateSource;
 import com.yandex.mapkit.map.CompositeIcon;
 import com.yandex.mapkit.map.IconStyle;
 import com.yandex.mapkit.map.Map;
-import com.yandex.mapkit.map.MapObject;
 import com.yandex.mapkit.map.MapObjectCollection;
 import com.yandex.mapkit.map.RotationType;
 import com.yandex.mapkit.map.VisibleRegionUtils;
@@ -56,25 +47,25 @@ import com.yandex.mapkit.user_location.UserLocationObjectListener;
 import com.yandex.mapkit.user_location.UserLocationView;
 import com.yandex.runtime.Error;
 import com.yandex.runtime.image.ImageProvider;
-import com.yandex.mapkit.map.CameraListener;
 import com.yandex.runtime.network.NetworkError;
 import com.yandex.runtime.network.RemoteError;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class YandexActivity extends Activity implements UserLocationObjectListener, Session.SearchListener, CameraListener, DrivingSession.DrivingRouteListener {
     /**
      * Replace "your_api_key" with a valid developer key.
      * You can get it at the https://developer.tech.yandex.ru/ website.
      */
+
     private final String MAPKIT_API_KEY = "5ad204eb-61bd-4fc7-8ce6-e4f6b34f7fda";
     private static final int LOCATION_REQUEST = 500;
     private static final int REQUEST_LOCATION = 1;
 
     private Point ROUTE_START_LOCATION = new Point(59.959194, 30.407094);
     private Point ROUTE_END_LOCATION = new Point(55.733330, 37.587649);
-
 
 
     private MapObjectCollection mapObjects;
@@ -100,7 +91,6 @@ public class YandexActivity extends Activity implements UserLocationObjectListen
 
     double Lattitude = 58.0032467;
     double Longitude = 56.2125332;
-
 
 
     private void submitQuery(String query) {
@@ -357,7 +347,7 @@ public class YandexActivity extends Activity implements UserLocationObjectListen
                         .setScale(0.5f)
         );
 
-       // userLocationView.getAccuracyCircle().setFillColor(Color.BLUE);
+        // userLocationView.getAccuracyCircle().setFillColor(Color.BLUE);
     }
 
     @Override

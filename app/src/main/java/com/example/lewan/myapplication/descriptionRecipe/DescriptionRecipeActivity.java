@@ -1,24 +1,13 @@
 package com.example.lewan.myapplication.descriptionRecipe;
 
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.lewan.myapplication.R;
-import com.example.lewan.myapplication.menu.PageFragmentMenuGetUserRecipe;
-import com.example.lewan.myapplication.menu.PageFragmentMenuSelectProductAndSearchRecipe;
-
-import java.util.ArrayList;
 
 public class DescriptionRecipeActivity extends AppCompatActivity {
 

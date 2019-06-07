@@ -10,7 +10,6 @@ import android.text.SpannableString;
 import android.text.style.ImageSpan;
 
 import com.example.lewan.myapplication.R;
-import com.example.lewan.myapplication.menu.PageFragmentsMenu;
 
 public class DescriptionFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 2;
