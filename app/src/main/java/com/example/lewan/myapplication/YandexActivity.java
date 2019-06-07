@@ -59,6 +59,7 @@ public class YandexActivity extends Activity implements UserLocationObjectListen
      * Replace "your_api_key" with a valid developer key.
      * You can get it at the https://developer.tech.yandex.ru/ website.
      */
+
     private final String MAPKIT_API_KEY = "5ad204eb-61bd-4fc7-8ce6-e4f6b34f7fda";
     private static final int LOCATION_REQUEST = 500;
     private static final int REQUEST_LOCATION = 1;
