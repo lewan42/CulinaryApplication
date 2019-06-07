@@ -1,22 +1,14 @@
 package com.example.lewan.myapplication;
 
-import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
-
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
 
 
 public class Authorization extends Thread {
@@ -52,7 +44,7 @@ public class Authorization extends Thread {
 
             inputLine = sb.toString();
 
-            System.err.println("Authorization JSON= "+inputLine);
+            System.err.println("Authorization JSON= " + inputLine);
 
             JSONObject jObject = new JSONObject(inputLine);
             String aJsonString = (String) jObject.get("status");
@@ -63,9 +55,9 @@ public class Authorization extends Thread {
 
         } catch (MalformedURLException e) {
             System.out.println(e.getMessage());
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
-        }catch (JSONException e) {
+        } catch (JSONException e) {
             System.out.println(e.getMessage());
         }
     }

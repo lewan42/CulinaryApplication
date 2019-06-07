@@ -12,7 +12,7 @@ public class RecipesInfo {
     private String tmp;
 
 
-    public RecipesInfo(int id, String name, int time, int servings, String description, int img,String t) {
+    public RecipesInfo(int id, String name, int time, int servings, String description, int img, String t) {
 
         idRecipe = id;
         nameRecipe = name;

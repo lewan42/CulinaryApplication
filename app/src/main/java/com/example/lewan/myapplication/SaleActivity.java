@@ -2,8 +2,8 @@ package com.example.lewan.myapplication;
 
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -79,9 +79,8 @@ public class SaleActivity extends AppCompatActivity {
             while (t.isAlive()) {
             }
 
-            for (SalesInfo s : salesInfos)
-            {
-                System.err.println(s.getNameMagaz()+ "/" + s.getNameProduct());
+            for (SalesInfo s : salesInfos) {
+                System.err.println(s.getNameMagaz() + "/" + s.getNameProduct());
             }
 
             final SalesAdapter salesAdapter = new SalesAdapter(getApplicationContext(), 1, salesInfos);
@@ -92,7 +91,7 @@ public class SaleActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 
                     SalesInfo selectedItem = (SalesInfo) parent.getItemAtPosition(position);
-                    Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedItem.getNameProduct()+ " " + selectedItem.getNameMagaz(),
+                    Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedItem.getNameProduct() + " " + selectedItem.getNameMagaz(),
                             Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(getApplicationContext(), YandexActivity.class);

@@ -22,7 +22,6 @@ import java.util.List;
 import java.util.Locale;
 
 import static android.content.Context.MODE_PRIVATE;
-import static com.yandex.runtime.Runtime.getApplicationContext;
 
 public class PageFragmentMenuGetUserRecipe extends ArrayAdapter<RecipesInfo> implements Filterable, Serializable {
 
