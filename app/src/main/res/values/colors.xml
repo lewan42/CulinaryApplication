@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d2d2d2</color>
+    <color name="colorPrimaryDark">#40312A</color>
+    <color name="colorAccent">#a3a3a3</color>
+    <color name="mainBackground">#4b3e38</color>
+    <color name="fragmentBackground">#40312A</color>
+    <color name="white">#d2d2d2</color>
+    <color name="gray">#afafaf</color>
+    <color name="button">#cccccc</color>
+    <color name="darkgray">#787878</color>
+    <color name="lightgray">#d4d4d4</color>
+</resources>

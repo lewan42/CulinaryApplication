@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabIndicatorColor">?attr/colorPrimaryDark</item>
+        <item name="tabIndicatorHeight">4dp</item>
+
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTabLayout2" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/mainBackground</item>
+        <item name="tabIndicatorHeight">4dp</item>
+
+    </style>
+
+
+    <style name="MyEditText" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/gray</item>
+        <item name="android:colorControlHighlight">@color/darkgray</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+    </style>
+
+    <style name="popupMenuStyle" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:textColor">@color/mainBackground</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/button</item>
+    </style>
+</resources>
+

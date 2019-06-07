@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="@color/mainBackground">
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/field_login"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/aliasApplication"
+        android:textColor="@color/white"
+        android:textSize="47sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="cursive" />
+
+
+    <EditText
+        android:id="@+id/field_login"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+
+        android:layout_above="@id/field_password"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:textColor="@color/gray"
+        android:ems="10"
+        android:hint="Логин"
+        android:textColorHint="@color/gray"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/field_password"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+
+        android:layout_above="@id/btn_logIn"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+
+        android:textColor="@color/gray"
+        android:ems="10"
+        android:hint="Пароль"
+        android:textColorHint="@color/gray"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btn_logIn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/create_acc"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/button"
+
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Войти"
+        android:textSize="15dp"
+        android:textColor="@color/mainBackground"
+        />
+
+
+    <TextView
+        android:id="@+id/create_acc"
+        android:clickable="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:text="Создать аккаунт"  />
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll">
+    <RelativeLayout
+
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackground"
+        tools:context=".PageFragmentsMenu"
+        >
+
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center"
+
+            android:text="Создание рецепта"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_below="@+id/header_text"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/selectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_below="@+id/header_text"
+
+            android:gravity="center"
+
+            android:text="Выберите изображение: "
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imageBut"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            android:layout_below="@+id/selectImage"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+
+            android:background="@drawable/camera2"
+            />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_below="@+id/imageBut"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/textNameReciepe"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_below="@+id/divider5"
+
+            android:gravity="center"
+
+            android:text="Введите название рецепта: "
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/field_nameReciepe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textNameReciepe"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+
+            android:ems="10"
+            android:hint="Название рецепта"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_below="@+id/field_nameReciepe"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/selectProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_below="@+id/divider7"
+
+            android:gravity="center"
+
+            android:text="Укажите ингриденты: "
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linLayout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/selectProducts"
+            >
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linLayout"
+            android:text="Добавить ингридиент"
+            android:textColor="@color/mainBackground"
+            android:layout_alignParentStart = "true"
+            android:layout_toLeftOf ="@+id/buttonDel"
+            android:background="@drawable/button"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"/>
+        <Button
+            android:id="@+id/buttonDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linLayout"
+
+            android:layout_alignParentEnd = "true"
+            android:text="Удалить"
+            android:textColor="@color/mainBackground"
+            android:textSize="14sp"
+            android:background="@drawable/button"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"/>
+
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_below="@+id/buttonDel"
+            android:layout_marginTop = "15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/inputOpis"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_below="@+id/divider6"
+
+            android:gravity="center"
+
+            android:text="Введите описание рецепта: "
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/field_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/inputOpis"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+
+            android:ems="10"
+            android:hint="Описание"
+            android:inputType="textMultiLine"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray" />
+
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/field_product"
+            android:text="Создать рецепт"
+            android:textColor="@color/mainBackground"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+</ScrollView>
